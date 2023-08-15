@@ -14,3 +14,7 @@ app.use('/api/notes',require('./routes/notes'))
 app.listen(port,()=>{
     console.log(`App listening at http://localhost:${port}`)
 })
+
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running 🥳')
+})
