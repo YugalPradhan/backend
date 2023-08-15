@@ -2,10 +2,6 @@ const connectToMongo=require('./db');
 const express=require('express');
 var cors=require('cors')
 
-if (process.env.NODE_ENV !== "PRODUCTION") {
-    require("dotenv").config({ path: "backend/config/config.env" });
-  }
-
 connectToMongo();
 const app=express()
 const port=5000    
